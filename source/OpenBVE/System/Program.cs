@@ -196,7 +196,7 @@ namespace OpenBve {
 				if (!CurrentHost.LoadPlugins(FileSystem, Interface.CurrentOptions, out string error, TrainManager, Renderer))
 				{
 					Program.ShowMessageBox(error, Translations.GetInterfaceString(HostApplication.OpenBve, new[] { "program", "title" }));
-					throw new Exception("Unable to load the required plugins- Please reinstall OpenBVE");
+					throw new Exception("Unable to load the required plugins- Please reinstall ProjectRails");
 				}
 				Game.Reset(false);
 				bool loaded = false;
@@ -338,7 +338,7 @@ namespace OpenBve {
 										{
 											// if building from scratch, the compilation process has failed to copy this file correctly-
 											// place in the application root directory (JetBrains Rider)
-											Program.ShowMessageBox(@"This installation of OpenBVE is corrupt (OpenTk.dll.config could not be found). \n Please reinstall OpenBVE.", Translations.GetInterfaceString(HostApplication.OpenBve, new[] { "program", "title" }));
+											Program.ShowMessageBox(@"This installation of ProjectRails is corrupt (OpenTk.dll.config could not be found). \n Please reinstall ProjectRails.", Translations.GetInterfaceString(HostApplication.OpenBve, new[] { "program", "title" }));
 										}
 										break;
 									default:
@@ -388,7 +388,7 @@ namespace OpenBve {
 		private static bool Initialize()
 		{
 			if (!CurrentHost.LoadPlugins(FileSystem, Interface.CurrentOptions, out string error, TrainManager, Renderer)) {
-				Program.ShowMessageBox(error, @"OpenBVE");
+				Program.ShowMessageBox(error, @"ProjectRails");
 				return false;
 			}
 			

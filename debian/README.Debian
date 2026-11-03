@@ -1,11 +1,11 @@
-OpenBve is in theory cross-platform in both Source, and Binary
+ProjectRails (based on OpenBVE) is in theory cross-platform in both Source, and Binary
 (compiled) form because it uses CLI/CLR (".Net"/Mono).
 
 This version for Debian/Ubuntu is compiled from source-code and
 includes additional small changes; mainly to add Unix-specific (and
 Debian/Ubuntu packaging-specific) file paths.
 
-OpenBve itself is fairly well designed and abstracts most of the
+ProjectRails itself is fairly well designed and abstracts most of the
 file-handling, including functions for case-insensitive filename
 resolution, but out-of-the-box does not provide suitable default
 save/load locations for Unix.

@@ -1,4 +1,7 @@
-### Contributing Code to openBVE
+### Contributing Code to ProjectRails
+
+ProjectRails is a fork of [OpenBVE](https://openbve-project.net). Please keep the
+upstream credits in the [Readme](Readme.md#attribution) and below intact.
 
 **Please Note:**
 This file is a work in progress, and is intended to serve as a general set of guidelines, not hard and fast rules!
@@ -52,7 +55,7 @@ Please do not contribute code under the GPL or simiar 'viral' or restrictive lic
 
 ### Third Party Code
 
-Some parts of OpenBVE and the underlying libraries have been adapted from third party code. If it is covered by a different licence, this and the contributors for this code will be noted in the header of any such file.
+Some parts of ProjectRails, OpenBVE and the underlying libraries have been adapted from third party code. If it is covered by a different licence, this and the contributors for this code will be noted in the header of any such file.
 A list is also provided here:
 
 - Animated GIF decoder based upon work by Kevin Weiner, FM Software; LZW decoder adapted from John Cristy's ImageMagick

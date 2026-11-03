@@ -23,8 +23,8 @@
 			<group id="openbve">
 				<group id="program">
 					<trans-unit id="title">
-						<source>OpenBVE</source>
-						<target>OpenBVE</target>
+						<source>ProjectRails</source>
+						<target>ProjectRails</target>
 					</trans-unit>
 				</group>
 				<group id="about">
@@ -33,16 +33,16 @@
 						<target>About</target>
 					</trans-unit>
 					<trans-unit id="description">
-						<source>OpenBVE is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nThis program was initially developed by Michelle, and is released into the public domain where legally possible.</source>
-						<target>OpenBVE is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nThis program was initially developed by Michelle, and is released into the public domain where legally possible.</target>
+						<source>ProjectRails is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nProjectRails is a fork of OpenBVE, which was initially developed by Michelle, and is released into the public domain where legally possible.</source>
+						<target>ProjectRails is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nProjectRails is a fork of OpenBVE, which was initially developed by Michelle, and is released into the public domain where legally possible.</target>
 					</trans-unit>
 					<trans-unit id="open_source_licenses">
 						<source>Open Source Licenses</source>
 						<target>Open Source Licenses</target>
 					</trans-unit>
 					<trans-unit id="open_source_licenses_header">
-						<source>OpenBVE makes use of several open-source libraries, whose licenses are reproduced below:</source>
-						<target>OpenBVE makes use of several open-source libraries, whose licenses are reproduced below:</target>
+						<source>ProjectRails makes use of several open-source libraries, whose licenses are reproduced below:</source>
+						<target>ProjectRails makes use of several open-source libraries, whose licenses are reproduced below:</target>
 					</trans-unit>
 					<trans-unit id="close">
 						<source>Close</source>
@@ -283,7 +283,7 @@
 						<target>If you are attempting to install addons in the Program Files or ProgramData folders, this may require administrator permission. \r\n\r\n This is not recommended for security reasons.</target>
 					</trans-unit>
 					<trans-unit id="database_newer_expected">
-						<source>The package database version appears to be a newer version than supported by this copy of OpenBVE.</source>
+						<source>The package database version appears to be a newer version than supported by this copy of ProjectRails.</source>
 					</trans-unit>
 					<trans-unit id="database_invalid_xml">
 						<source>The package database XML was invalid, and has been re-created.</source>
@@ -408,7 +408,7 @@
 					</trans-unit>
 					<trans-unit id="train_pluginnotsupported">
 						<source>--- This train uses a safety system plugin which cannot be used on your operating system. The built-in safety systems ATS/ATC will be used instead, which might cause operational problems. ---</source>
-						<target>--- 이 차량은 현재 운영체제에서 사용할 수 없는 플러그인을 요청합니다. 따라서 차량이 요청한 플러그인 대신, OpenBVE 내장 플러그인을 사용하므로 운행중 오류가 발생할 수 있습니다. ---</target>
+						<target>--- 이 차량은 현재 운영체제에서 사용할 수 없는 플러그인을 요청합니다. 따라서 차량이 요청한 플러그인 대신, ProjectRails 내장 플러그인을 사용하므로 운행중 오류가 발생할 수 있습니다. ---</target>
 					</trans-unit>
 					<trans-unit id="start">
 						<source>Start</source>
@@ -628,8 +628,8 @@
 						<target>Install a Package</target>
 					</trans-unit>
 					<trans-unit id="install_invalid">
-						<source>This file does not appear to be a valid OpenBVE package.</source>
-						<target>This file does not appear to be a valid OpenBVE package.</target>
+						<source>This file does not appear to be a valid ProjectRails package.</source>
+						<target>This file does not appear to be a valid ProjectRails package.</target>
 					</trans-unit>
 					<trans-unit id="install_version_error">
 						<source>Package Version Error</source>
@@ -1004,7 +1004,7 @@
 						<target>Failed to create the following file: \r \n</target>
 					</trans-unit>
 					<trans-unit id="database_newer_expected">
-						<source>The package database version appears to be a newer version than supported by this copy of OpenBVE.</source>
+						<source>The package database version appears to be a newer version than supported by this copy of ProjectRails.</source>
 					</trans-unit>
 					<trans-unit id="database_invalid_xml">
 						<source>The package database XML was invalid, and has been re-created.</source>
@@ -4154,8 +4154,8 @@
 						<target>Extended Features</target>
 					</trans-unit>
 					<trans-unit id="note">
-						<source>Please note: Features found on this page may require the following minimum version of OpenBVE:</source>
-						<target>Please note: Features found on this page may require the following minimum version of OpenBVE:</target>
+						<source>Please note: Features found on this page may require the following minimum version of ProjectRails:</source>
+						<target>Please note: Features found on this page may require the following minimum version of ProjectRails:</target>
 					</trans-unit>
 					<trans-unit id="loco_brake">
 						<source>Locomotive Brake</source>

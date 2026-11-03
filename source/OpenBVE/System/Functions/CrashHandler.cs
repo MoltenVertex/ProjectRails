@@ -24,8 +24,8 @@ namespace OpenBve
                 {
                     var settingsFolder = Program.FileSystem != null ? Program.FileSystem.SettingsFolder : null;
                     crashLog = string.IsNullOrEmpty(settingsFolder)
-                        ? Path.Combine(System.IO.Path.GetTempPath(), "OpenBVE Crash- " + DateTime.Now.ToString("yyyy.M.dd[HH.mm]") + ".log")
-                        : Path.CombineFile(settingsFolder, "OpenBVE Crash- " + DateTime.Now.ToString("yyyy.M.dd[HH.mm]") + ".log");
+                        ? Path.Combine(System.IO.Path.GetTempPath(), "ProjectRails Crash- " + DateTime.Now.ToString("yyyy.M.dd[HH.mm]") + ".log")
+                        : Path.CombineFile(settingsFolder, "ProjectRails Crash- " + DateTime.Now.ToString("yyyy.M.dd[HH.mm]") + ".log");
                 }
                 return crashLog;
             }
@@ -86,7 +86,7 @@ namespace OpenBve
 	        }
             try
             {
-                MessageBox.Show("An unhandled Windows Forms Exception occured. \r\n\r\n OpenBVE will now exit. Please consider reporting this with the \"Report Problem\" button on the bottom left of the main menu.", "OpenBVE Crashed", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("An unhandled Windows Forms Exception occured. \r\n\r\n ProjectRails will now exit. Please consider reporting this with the \"Report Problem\" button on the bottom left of the main menu.", "ProjectRails Crashed", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 LogCrash(t.Exception + Environment.NewLine + Environment.StackTrace);
             }
             catch (Exception exc)
@@ -112,7 +112,7 @@ namespace OpenBve
             {
                 //Basic information
                 outputFile.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                outputFile.WriteLine("OpenBVE " + Application.ProductVersion + " Crash Log");
+                outputFile.WriteLine("ProjectRails " + Application.ProductVersion + " Crash Log");
                 var Platform = "Unknown";
                 if (OpenTK.Configuration.RunningOnWindows)
                 {
@@ -219,7 +219,7 @@ namespace OpenBve
             {
                 //Basic information
                 outputFile.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                outputFile.WriteLine("OpenBVE " + Application.ProductVersion + " Crash Log");
+                outputFile.WriteLine("ProjectRails " + Application.ProductVersion + " Crash Log");
                 var Platform = "Unknown";
                 if (OpenTK.Configuration.RunningOnWindows)
                 {

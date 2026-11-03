@@ -295,7 +295,7 @@ namespace TrainManager.Trains
 				case HostPlatform.WINE:
 					if (IntPtr.Size != 4)
 					{
-						TrainManagerBase.currentHost.AddMessage(MessageType.Error, false, "WINE does not support the WCF plugin proxy- Please use the 32-bit version of OpenBVE to load this train plugin.");
+						TrainManagerBase.currentHost.AddMessage(MessageType.Error, false, "WINE does not support the WCF plugin proxy- Please use the 32-bit version of ProjectRails to load this train plugin.");
 						return false;
 					}
 					break;

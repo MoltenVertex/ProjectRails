@@ -23,8 +23,8 @@
 			<ns0:group id="openbve">
 				<ns0:group id="program">
 					<ns0:trans-unit id="title">
-						<ns0:source>OpenBVE</ns0:source>
-						<ns0:target state="translated">OpenBVE</ns0:target>
+						<ns0:source>ProjectRails</ns0:source>
+						<ns0:target state="translated">ProjectRails</ns0:target>
 					</ns0:trans-unit>
 				</ns0:group>
 				<ns0:group id="about">
@@ -33,16 +33,16 @@
 						<ns0:target state="translated">Om</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="description">
-						<ns0:source>OpenBVE is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nThis program was initially developed by Michelle, and is released into the public domain where legally possible.</ns0:source>
-						<ns0:target state="translated">OpenBVE är en gratis och öppen källkodsbaserad tågsimulator för flera plattformar, med stöd för 2D- och 3D-förarhytter och landskap.\r\n\r\nProgrammet utvecklades ursprungligen av Michelle och har släppts till allmänheten där det är lagligt möjligt.</ns0:target>
+						<ns0:source>ProjectRails is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nProjectRails is a fork of OpenBVE, which was initially developed by Michelle, and is released into the public domain where legally possible.</ns0:source>
+						<ns0:target state="translated">ProjectRails är en gratis och öppen källkodsbaserad tågsimulator för flera plattformar, med stöd för 2D- och 3D-förarhytter och landskap.\r\n\r\nProgrammet utvecklades ursprungligen av Michelle och har släppts till allmänheten där det är lagligt möjligt.</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="open_source_licenses">
 						<ns0:source>Open Source Licenses</ns0:source>
 						<ns0:target state="translated">Öppna källkodslicenser</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="open_source_licenses_header">
-						<ns0:source>OpenBVE makes use of several open-source libraries, whose licenses are reproduced below:</ns0:source>
-						<ns0:target state="translated">OpenBVE använder flera öppen källkodsbibliotek, vars licenser återges nedan:</ns0:target>
+						<ns0:source>ProjectRails makes use of several open-source libraries, whose licenses are reproduced below:</ns0:source>
+						<ns0:target state="translated">ProjectRails använder flera öppen källkodsbibliotek, vars licenser återges nedan:</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="close">
 						<ns0:source>Close</ns0:source>
@@ -635,8 +635,8 @@
 						<ns0:target state="translated">Installera ett paket</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="install_invalid">
-						<ns0:source>This file does not appear to be a valid OpenBVE package.</ns0:source>
-						<ns0:target state="translated">Denna fil verkar inte vara ett giltigt OpenBVE-paket.</ns0:target>
+						<ns0:source>This file does not appear to be a valid ProjectRails package.</ns0:source>
+						<ns0:target state="translated">Denna fil verkar inte vara ett giltigt ProjectRails-paket.</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="install_version_error">
 						<ns0:source>Package Version Error</ns0:source>
@@ -1011,8 +1011,8 @@
 						<ns0:target state="translated">Det gick inte att skapa följande fil: \r \n</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="database_newer_expected">
-						<ns0:source>The package database version appears to be a newer version than supported by this copy of OpenBVE.</ns0:source>
-						<ns0:target state="translated">Paketdatabasversionen verkar vara en nyare version än den som stöds av denna kopia av OpenBVE.</ns0:target>
+						<ns0:source>The package database version appears to be a newer version than supported by this copy of ProjectRails.</ns0:source>
+						<ns0:target state="translated">Paketdatabasversionen verkar vara en nyare version än den som stöds av denna kopia av ProjectRails.</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="database_invalid_xml">
 						<ns0:source>The package database XML was invalid, and has been re-created.</ns0:source>
@@ -4272,8 +4272,8 @@
 						<ns0:target state="translated">Utökade funktioner</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="note">
-						<ns0:source>Please note: Features found on this page may require the following minimum version of OpenBVE:</ns0:source>
-						<ns0:target state="translated">Observera: Funktionerna på denna sida kan kräva följande minimiversion av OpenBVE:</ns0:target>
+						<ns0:source>Please note: Features found on this page may require the following minimum version of ProjectRails:</ns0:source>
+						<ns0:target state="translated">Observera: Funktionerna på denna sida kan kräva följande minimiversion av ProjectRails:</ns0:target>
 					</ns0:trans-unit>
 					<ns0:trans-unit id="loco_brake">
 						<ns0:source>Locomotive Brake</ns0:source>

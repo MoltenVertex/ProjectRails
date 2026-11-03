@@ -62,7 +62,7 @@ namespace OpenBve
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(201, 25);
             this.labelProductName.TabIndex = 0;
-            this.labelProductName.Text = "openBVE v0.0.0.0";
+            this.labelProductName.Text = "ProjectRails v0.0.0.0";
             // 
             // textBoxMain
             // 
@@ -120,7 +120,7 @@ namespace OpenBve
             this.labelOpenSourceHeader.Name = "labelOpenSourceHeader";
             this.labelOpenSourceHeader.Size = new System.Drawing.Size(445, 13);
             this.labelOpenSourceHeader.TabIndex = 3;
-            this.labelOpenSourceHeader.Text = "OpenBVE makes use of several open-source libraries, whose licences are reproduced" +
+            this.labelOpenSourceHeader.Text = "ProjectRails makes use of several open-source libraries, whose licences are reproduced" +
     " below:";
 			// 
 			// buttonClose

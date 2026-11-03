@@ -228,15 +228,15 @@ namespace RouteViewer
 				// dying with a stack trace (mirrors OpenBVE/Program.cs).
 				if (ex.Message == "libopenal.so.1")
 				{
-					System.Windows.Forms.MessageBox.Show(@"openAL was not found on this system." + Environment.NewLine + @"Please install libopenal1 via your distribution's package management system.", @"OpenBVE", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+					System.Windows.Forms.MessageBox.Show(@"openAL was not found on this system." + Environment.NewLine + @"Please install libopenal1 via your distribution's package management system.", @"ProjectRails", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
 				}
 				else if (Program.CurrentHost.Platform != HostPlatform.MicrosoftWindows)
 				{
-					System.Windows.Forms.MessageBox.Show(@"This installation of OpenBVE is corrupt (OpenTK.dll.config could not be found)." + Environment.NewLine + @"Please reinstall OpenBVE.", @"OpenBVE", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+					System.Windows.Forms.MessageBox.Show(@"This installation of ProjectRails is corrupt (OpenTK.dll.config could not be found)." + Environment.NewLine + @"Please reinstall ProjectRails.", @"ProjectRails", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
 				}
 				else
 				{
-					System.Windows.Forms.MessageBox.Show(@"The required system library " + ex.Message + @" was not found on this system.", @"OpenBVE", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+					System.Windows.Forms.MessageBox.Show(@"The required system library " + ex.Message + @" was not found on this system.", @"ProjectRails", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
 				}
 				Exit();
 				return;

@@ -143,7 +143,7 @@ namespace RouteViewer
 			TrainManager = new TrainManager(CurrentHost, Renderer, Interface.CurrentOptions, FileSystem);
 			if (!CurrentHost.LoadPlugins(FileSystem, Interface.CurrentOptions, out string error, TrainManager, Renderer))
 			{
-				MessageBox.Show(error, @"OpenBVE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show(error, @"ProjectRails", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			GameMenu.Instance = new GameMenu();
@@ -310,7 +310,7 @@ namespace RouteViewer
 			using (System.IO.StreamWriter outputFile = new System.IO.StreamWriter(path))
 			{
 				outputFile.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-				outputFile.WriteLine("OpenBVE Route Viewer " + Application.ProductVersion + " Crash Log");
+				outputFile.WriteLine("ProjectRails Route Viewer " + Application.ProductVersion + " Crash Log");
 				outputFile.WriteLine("Currently loaded route: " + (CurrentRouteFile ?? "(none)"));
 				try
 				{

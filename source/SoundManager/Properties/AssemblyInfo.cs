@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // 制御されます。アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
 [assembly: AssemblyTitle("SoundManager")]
-[assembly: AssemblyDescription("OpenBVE shared sound library")]
+[assembly: AssemblyDescription("ProjectRails shared sound library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OpenBVE")]
+[assembly: AssemblyProduct("ProjectRails")]
 [assembly: AssemblyCopyright("Copyright © The OpenBVE Project 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

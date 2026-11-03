@@ -44,7 +44,7 @@ cat > mac/OpenBVE.app/Contents/Info.plist << EOF
 	<key>CFBundleIconFile</key>
 	<string>OpenBVE.icns</string>
 	<key>CFBundleName</key>
-	<string>OpenBVE</string>
+	<string>ProjectRails</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -73,7 +73,7 @@ Depends: debhelper (>= 9), mono-runtime (>= 5.20.1), libmono-corlib4.5-cil (>= 5
 Recommends: bve-route, bve-train
 Homepage: http://openbve-project.net
 Description: realistic 3D train/railway simulator (main program)
- OpenBVE is a railway train-driving simulator with an emphasis on
+ ProjectRails is a railway train-driving simulator with an emphasis on
  in-cab driving, realistic physics, braking system and train safety
  system modelling.
  .
@@ -83,7 +83,7 @@ Description: realistic 3D train/railway simulator (main program)
  forces that shake the driver's simulated body upon acceleration and
  braking, as well as through curves.
  .
- Compared to other rail-based simulators, OpenBVE has its main focus on
+ Compared to other rail-based simulators, ProjectRails has its main focus on
  realism---not necessarily on user-friendliness. There may be a need
  to study operational manuals for the routes and trains chosen, rather
  than merely memorising a few keystrokes.
@@ -93,7 +93,7 @@ Description: realistic 3D train/railway simulator (main program)
  existing scenarios to be loaded by a single-program (BVE1, BVE2,
  BVE4 and extended OpenBVE route formats).
  .
- OpenBVE uses OpenGL for 3D graphics rendering, OpenAL for positional
+ ProjectRails uses OpenGL for 3D graphics rendering, OpenAL for positional
  surround sound, and is written in the C# language.  Note that binary
  train extension plugins are not currently supported on Linux/Unix,
  because these would require Win32 emulation.

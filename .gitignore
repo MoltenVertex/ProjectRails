@@ -23,9 +23,9 @@ linuxbuild.*
 macbuild.*
 /mac/
 installers/debian.deb
-OpenBVE-*.zip
-OpenBVE-*.deb
-OpenBVE-*.dmg
+ProjectRails-*.zip
+ProjectRails-*.deb
+ProjectRails-*.dmg
 
 #Debian Build directory
 installers/debian/usr/lib/*

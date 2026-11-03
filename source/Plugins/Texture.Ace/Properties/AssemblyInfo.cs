@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("MSTS ACE Texture Loader")]
 [assembly: AssemblyDescription("Supports loading the MSTS ACE texture file format.")]
-[assembly: AssemblyProduct("openBVE")]
+[assembly: AssemblyProduct("ProjectRails")]
 [assembly: AssemblyCopyright("The openBVE Project")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]

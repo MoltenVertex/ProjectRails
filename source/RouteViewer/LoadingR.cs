@@ -140,7 +140,7 @@ namespace RouteViewer {
 				{
 					// Diagnostics must never break loading.
 				}
-				MessageBox.Show("The route loader encountered the following critical error (" + ex.GetType().Name + "): " + ex.Message, @"OpenBVE", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+				MessageBox.Show("The route loader encountered the following critical error (" + ex.GetType().Name + "): " + ex.Message, @"ProjectRails", MessageBoxButtons.OK, MessageBoxIcon.Hand);
 				Cancel = true;
 			}
 		}

@@ -279,7 +279,7 @@ namespace OpenBve
 
 									if (!Program.CurrentHost.LoadPlugins(Program.FileSystem, Interface.CurrentOptions, out _, Program.TrainManager, Program.Renderer))
 									{
-										throw new Exception("Unable to load the required plugins- Please reinstall OpenBVE");
+										throw new Exception("Unable to load the required plugins- Please reinstall ProjectRails");
 									}
 									for (int j = 0; j < Program.CurrentHost.Plugins.Length; j++)
 									{
@@ -298,7 +298,7 @@ namespace OpenBve
 									}
 									if (!Program.CurrentHost.LoadPlugins(Program.FileSystem, Interface.CurrentOptions, out _, Program.TrainManager, Program.Renderer))
 									{
-										throw new Exception("Unable to load the required plugins- Please reinstall OpenBVE");
+										throw new Exception("Unable to load the required plugins- Please reinstall ProjectRails");
 									}
 									for (int j = 0; j < Program.CurrentHost.Plugins.Length; j++)
 									{
@@ -663,7 +663,7 @@ namespace OpenBve
 			// error ignored in this case, background thread
 			if (Program.CurrentHost.Plugins == null && !Program.CurrentHost.LoadPlugins(Program.FileSystem, Interface.CurrentOptions, out _, Program.TrainManager, Program.Renderer))
 			{
-				throw new Exception("Unable to load the required plugins- Please reinstall OpenBVE");
+				throw new Exception("Unable to load the required plugins- Please reinstall ProjectRails");
 			}
 			try
 			{
@@ -845,7 +845,7 @@ namespace OpenBve
 		{
 			if (!Program.CurrentHost.LoadPlugins(Program.FileSystem, Interface.CurrentOptions, out _, Program.TrainManager, Program.Renderer))
 			{
-				throw new Exception("Unable to load the required plugins- Please reinstall OpenBVE");
+				throw new Exception("Unable to load the required plugins- Please reinstall ProjectRails");
 			}
 			if (listviewTrainFolders.SelectedItems.Count == 1) {
 				if (listviewTrainFolders.SelectedItems[0].Tag is string t) {
@@ -903,7 +903,7 @@ namespace OpenBve
 		{
 			if (!Program.CurrentHost.LoadPlugins(Program.FileSystem, Interface.CurrentOptions, out _, Program.TrainManager, Program.Renderer))
 			{
-				throw new Exception("Unable to load the required plugins- Please reinstall OpenBVE");
+				throw new Exception("Unable to load the required plugins- Please reinstall ProjectRails");
 			}
 			if (listViewTrainPackages.SelectedItems.Count == 1) {
 				if (listViewTrainPackages.SelectedItems[0].Tag is string t) {
@@ -1254,7 +1254,7 @@ namespace OpenBve
 		{
 			if (!Program.CurrentHost.LoadPlugins(Program.FileSystem, Interface.CurrentOptions, out _, Program.TrainManager, Program.Renderer))
 			{
-				throw new Exception("Unable to load the required plugins- Please reinstall OpenBVE");
+				throw new Exception("Unable to load the required plugins- Please reinstall ProjectRails");
 			}
 
 			Game.Reset(false);
@@ -1475,7 +1475,7 @@ namespace OpenBve
 			{
 				if (!Program.CurrentHost.LoadPlugins(Program.FileSystem, Interface.CurrentOptions, out _, Program.TrainManager, Program.Renderer))
 				{
-					throw new Exception("Unable to load the required plugins- Please reinstall OpenBVE");
+					throw new Exception("Unable to load the required plugins- Please reinstall ProjectRails");
 				}
 
 				bool canLoad = false;

@@ -75,31 +75,31 @@
 		<Hash>CDAD46F4AACD69E143BC36A409952A630D173913E8FD728197B68013EB0AE339</Hash>
 		<FileName>Figure-8-basic.rw</FileName>
 		<Incompatible>true</Incompatible>
-		<LogMessage>Crossing the player track is not supported by OpenBVE.</LogMessage>
+		<LogMessage>Crossing the player track is not supported by ProjectRails.</LogMessage>
 	</Patch>
 	<Patch>
 		<Hash>D7FF7DF534138E800028D3CCDFD5835E4D86E4085EF38805E44A39D59B6EC669</Hash>
 		<FileName>Figure-8-w-scenery.rw</FileName>
 		<Incompatible>true</Incompatible>
-		<LogMessage>Crossing the player track is not supported by OpenBVE.</LogMessage>
+		<LogMessage>Crossing the player track is not supported by ProjectRails.</LogMessage>
 	</Patch>
 	<Patch>
 		<Hash>58F3691118C684ED7C13C7746A66D1C7E0EB39FA5D8BB932A009C449F3E3EA1A</Hash>
 		<FileName>test curve.rw</FileName>
 		<Incompatible>true</Incompatible>
-		<LogMessage>Crossing the player track is not supported by OpenBVE.</LogMessage>
+		<LogMessage>Crossing the player track is not supported by ProjectRails.</LogMessage>
 	</Patch>
 	<Patch>
 		<Hash>79BCA08160F0D4DCB7C52CEF4B8DF8251261FA88A2E6A42738A73E487EF6931F</Hash>
 		<FileName>tight curve.rw</FileName>
 		<Incompatible>true</Incompatible>
-		<LogMessage>Crossing the player track is not supported by OpenBVE.</LogMessage>
+		<LogMessage>Crossing the player track is not supported by ProjectRails.</LogMessage>
 	</Patch>
 	<Patch>
 		<Hash>24AD4D7DF787E74A879304C986C37E535F032589C33E18D8A0FF38410FB123D4</Hash>
 		<FileName>tightcurve-csv.csv</FileName>
 		<Incompatible>true</Incompatible>
-		<LogMessage>Crossing the player track is not supported by OpenBVE.</LogMessage>
+		<LogMessage>Crossing the player track is not supported by ProjectRails.</LogMessage>
 	</Patch>
 	<Patch>
 		<Hash>4A66BDAF081C1FA9C14E2DCA6154E50CA5EDC33B31C90E973388F6A803F0F9C0</Hash>

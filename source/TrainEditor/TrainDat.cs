@@ -321,7 +321,7 @@ namespace TrainEditor {
 								{
 									if (v > currentVersion)
 									{
-										MessageBox.Show("The train.dat " + FileName + " was created with a newer version of OpenBVE." + Environment.NewLine + Environment.NewLine + "Please update your OpenBVE.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+										MessageBox.Show("The train.dat " + FileName + " was created with a newer version of ProjectRails." + Environment.NewLine + Environment.NewLine + "Please update your ProjectRails.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 									}
 								}
 								else

@@ -1,5 +1,5 @@
 ## Editing Language Files
-As of openBVE v1.7.0 the language data files are stored in XLF (XML Localization Interchange File Format) format.
+As of ProjectRails v1.7.0 the language data files are stored in XLF (XML Localization Interchange File Format) format.
 <https://en.wikipedia.org/wiki/XLIFF>
 
 This is intended to allow for easier editing, as well as support for translations in the viewers etc.

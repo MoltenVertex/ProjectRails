@@ -52,8 +52,8 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("OpenBVE")]
-[assembly: AssemblyProduct("OpenBVE")]
+[assembly: AssemblyTitle("ProjectRails")]
+[assembly: AssemblyProduct("ProjectRails")]
 [assembly: AssemblyCopyright("The OpenBVE Project")]
 [assembly: ComVisible(false)]
 [assembly: AssemblyVersion("<#= version #>")]

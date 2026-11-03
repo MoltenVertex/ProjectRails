@@ -76,7 +76,7 @@ namespace TrainEditor2
 			if (!CurrentHost.LoadPlugins(FileSystem, Interface.CurrentOptions, out string error, null, Renderer))
 			{
 				SoundApi.DeInitialize();
-				MessageBox.Show(error, @"OpenBVE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show(error, @"ProjectRails", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			

@@ -74,7 +74,7 @@ namespace OpenBve
 			try
 			{
 				DirectoryInfo directory = new DirectoryInfo(Program.FileSystem.SettingsFolder);
-				FileInfo file = directory.GetFiles("OpenBVE Crash*.log").OrderByDescending(f => f.LastWriteTime).First();
+				FileInfo file = directory.GetFiles("ProjectRails Crash*.log").OrderByDescending(f => f.LastWriteTime).First();
 				if (Program.CurrentHost.Platform == HostPlatform.MicrosoftWindows)
 				{
 					Process.Start(file.FullName);
@@ -93,7 +93,7 @@ namespace OpenBve
 
 		private void buttonReportProblem_Click(object sender, EventArgs e)
 		{
-			string fileName = "openBVE Bug Report" + DateTime.Now.ToString("dd_MM_yyyy") + ".zip";
+			string fileName = "ProjectRails Bug Report" + DateTime.Now.ToString("dd_MM_yyyy") + ".zip";
 			try
 			{
 				using (var ProblemReport = File.OpenWrite(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), fileName)))
@@ -111,7 +111,7 @@ namespace OpenBve
 						try
 						{
 							var directory = new DirectoryInfo(Program.FileSystem.SettingsFolder);
-							crashLog = directory.GetFiles("OpenBVE Crash*.log").OrderByDescending(f => f.LastWriteTime).First();
+							crashLog = directory.GetFiles("ProjectRails Crash*.log").OrderByDescending(f => f.LastWriteTime).First();
 						}
 						catch
 						{

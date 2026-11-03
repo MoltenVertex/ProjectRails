@@ -40,7 +40,7 @@ These websites may be a good starting point for locating additional files:
     http://www.trainsimcentral.co.uk/ (Birmingham "Cross-City")
     http://www.bvecornwall.co.uk
 
-This beautiful Italian route is designed for OpenBVE:
+This beautiful Italian route is designed for ProjectRails:
 
     http://fevf.altervista.org/
 
@@ -71,7 +71,7 @@ BTW, you can open the '.csv' file with a text-editor or spreadshet; See below.
 
   .../Train/Abc123/train.dat
 
-Where 'Abc123' is the directory that is loaded with OpenBVE.  The required files
+Where 'Abc123' is the directory that is loaded with ProjectRails.  The required files
 should be all inside this directory.
 
 Format

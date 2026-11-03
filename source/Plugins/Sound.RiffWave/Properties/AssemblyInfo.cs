@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("RIFF/WAV Sound Loader")]
 [assembly: AssemblyDescription("Supports loading WAV PCM or Microsoft ADPCM sounds embedded in a RIFF/RIFX container.")]
-[assembly: AssemblyProduct("openBVE")]
+[assembly: AssemblyProduct("ProjectRails")]
 [assembly: AssemblyCopyright("The openBVE Project")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]

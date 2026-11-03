@@ -1,7 +1,7 @@
 Credits
 -------
 
-As open-source software, many people have made contributions to openBVE.
+As open-source software, many people have made contributions to ProjectRails and its upstream project, openBVE.
 
 Programming
 -----------

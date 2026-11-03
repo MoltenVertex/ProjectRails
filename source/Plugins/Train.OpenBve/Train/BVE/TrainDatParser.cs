@@ -217,7 +217,7 @@ namespace Train.OpenBve
 				{
 					if (myVersion > currentVersion)
 					{
-						Plugin.CurrentHost.AddMessage(MessageType.Warning, false, "The train.dat " + FileName + " with version " + versionString + " was created with a newer version of openBVE. Please check for an update.");
+						Plugin.CurrentHost.AddMessage(MessageType.Warning, false, "The train.dat " + FileName + " with version " + versionString + " was created with a newer version of ProjectRails. Please check for an update.");
 					}
 					break;
 				}

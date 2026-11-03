@@ -562,7 +562,7 @@ namespace CsvRwRouteParser {
 										}
 										else
 										{
-											Plugin.CurrentHost.AddMessage(MessageType.Error, false, "OpenBVE: Unrecognised command " + Command + " encountered in the Track namespace at line " + Expressions[j].Line.ToString(Culture) + ", column " + Expressions[j].Column.ToString(Culture) + " in file " + Expressions[j].File);	
+											Plugin.CurrentHost.AddMessage(MessageType.Error, false, "ProjectRails: Unrecognised command " + Command + " encountered in the Track namespace at line " + Expressions[j].Line.ToString(Culture) + ", column " + Expressions[j].Column.ToString(Culture) + " in file " + Expressions[j].File);
 										}
 										
 									}

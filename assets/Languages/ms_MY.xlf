@@ -23,7 +23,7 @@
 			<group id="openbve">
 				<group id="program">
 					<trans-unit id="title">
-						<source>OpenBVE</source>
+						<source>ProjectRails</source>
 					</trans-unit>
 				</group>
 				<group id="about">
@@ -31,13 +31,13 @@
 						<source>About</source>
 					</trans-unit>
 					<trans-unit id="description">
-						<source>OpenBVE is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nThis program was initially developed by Michelle, and is released into the public domain where legally possible.</source>
+						<source>ProjectRails is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nProjectRails is a fork of OpenBVE, which was initially developed by Michelle, and is released into the public domain where legally possible.</source>
 					</trans-unit>
 					<trans-unit id="open_source_licenses">
 						<source>Open Source Licenses</source>
 					</trans-unit>
 					<trans-unit id="open_source_licenses_header">
-						<source>OpenBVE makes use of several open-source libraries, whose licenses are reproduced below:</source>
+						<source>ProjectRails makes use of several open-source libraries, whose licenses are reproduced below:</source>
 					</trans-unit>
 					<trans-unit id="close">
 						<source>Close</source>
@@ -121,7 +121,7 @@
 					</trans-unit>
 					<trans-unit id="updates_new">
 						<source>The new version [version] ([date]) is available for download on the Official Homepage.</source>
-						<target>Versi baharu [version] ([date]) sudah tersedia untuk dimuat turun dari Laman utama Rasmi OpenBVE.</target>
+						<target>Versi baharu [version] ([date]) sudah tersedia untuk dimuat turun dari Laman utama Rasmi ProjectRails.</target>
 					</trans-unit>
 					<trans-unit id="close">
 						<source>Close</source>
@@ -601,8 +601,8 @@
 						<target>Pasang Pakej</target>
 					</trans-unit>
 					<trans-unit id="install_invalid">
-						<source>This file does not appear to be a valid OpenBVE package.</source>
-						<target>Fail tidak kelihatan seperti pakej OpenBVE yang sah.</target>
+						<source>This file does not appear to be a valid ProjectRails package.</source>
+						<target>Fail tidak kelihatan seperti pakej ProjectRails yang sah.</target>
 					</trans-unit>
 					<trans-unit id="install_version_error">
 						<source>Package Version Error</source>
@@ -975,8 +975,8 @@
 						<target>Gagal untuk mencipta faol berikut: \r \n</target>
 					</trans-unit>
 					<trans-unit id="database_newer_expected">
-						<source>The package database version appears to be a newer version than supported by this copy of OpenBVE.</source>
-						<target>Versi pangkalan data pakej nampaknya merupakan versi yang lebih baharu daripada yang disokong oleh salinan OpenBVE ini.</target>
+						<source>The package database version appears to be a newer version than supported by this copy of ProjectRails.</source>
+						<target>Versi pangkalan data pakej nampaknya merupakan versi yang lebih baharu daripada yang disokong oleh salinan ProjectRails ini.</target>
 					</trans-unit>
 					<trans-unit id="database_invalid_xml">
 						<source>The package database XML was invalid, and has been re-created.</source>
@@ -4149,8 +4149,8 @@ Sila ikut arahan berikut:
 						<target>Ciri Lanjutan</target>
 					</trans-unit>
 					<trans-unit id="note">
-						<source>Please note: Features found on this page may require the following minimum version of OpenBVE:</source>
-						<target>Sila ambil perhatian: Ciri yang terdapat pada halaman ini mungkin memerlukan versi minimum OpenBVE berikut:</target>
+						<source>Please note: Features found on this page may require the following minimum version of ProjectRails:</source>
+						<target>Sila ambil perhatian: Ciri yang terdapat pada halaman ini mungkin memerlukan versi minimum ProjectRails berikut:</target>
 					</trans-unit>
 					<trans-unit id="loco_brake">
 						<source>Locomotive Brake</source>

@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("MP3 Sound Loader")]
 [assembly: AssemblyDescription("Supports loading MP3 sounds.")]
-[assembly: AssemblyProduct("openBVE")]
+[assembly: AssemblyProduct("ProjectRails")]
 [assembly: AssemblyCopyright("The openBVE Project")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]

@@ -346,9 +346,9 @@ namespace OpenBveApi.FileSystem {
 									if (!Directory.Exists(system.DataFolder))
 									{
 										//If we are still unable to find the default data folder, this is a critical error, as it contains all sorts of essential stuff.....
-										MessageBox.Show(@"Unable to find the OpenBVE Data folder." + Environment.NewLine +
-										                @"OpenBVE will now exit as the Data folder is required for normal operation." + Environment.NewLine + Environment.NewLine +
-										                @"Please consider reinstalling OpenBVE.", @"Critical Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+										MessageBox.Show(@"Unable to find the ProjectRails Data folder." + Environment.NewLine +
+										                @"ProjectRails will now exit as the Data folder is required for normal operation." + Environment.NewLine + Environment.NewLine +
+										                @"Please consider reinstalling ProjectRails.", @"Critical Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
 										Environment.Exit(0);
 									}
 								}
@@ -478,7 +478,7 @@ namespace OpenBveApi.FileSystem {
 			try
 			{
 				string file = System.IO.Path.Combine(SettingsFolder, "log.txt");
-				File.WriteAllText(file, @"OpenBVE Log: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + Environment.NewLine + @"Program Version: " + version + Environment.NewLine + Environment.NewLine, new UTF8Encoding(true));
+				File.WriteAllText(file, @"ProjectRails Log: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + Environment.NewLine + @"Program Version: " + version + Environment.NewLine + Environment.NewLine, new UTF8Encoding(true));
 			}
 			catch
 			{

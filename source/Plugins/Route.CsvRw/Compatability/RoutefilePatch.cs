@@ -26,7 +26,7 @@ namespace CsvRwRouteParser
 			{
 				if (patch.Incompatible)
 				{
-					throw new Exception("This routefile is incompatible with OpenBVE: " + Environment.NewLine + Environment.NewLine + patch.LogMessage);
+					throw new Exception("This routefile is incompatible with ProjectRails: " + Environment.NewLine + Environment.NewLine + patch.LogMessage);
 				}
 				Data.LineEndingFix = patch.LineEndingFix;
 				Data.IgnorePitchRoll = patch.IgnorePitchRoll;

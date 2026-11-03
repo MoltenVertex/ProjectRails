@@ -6468,7 +6468,7 @@ namespace OpenBve {
             this.KeyPreview = true;
             this.Name = "formMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OpenBVE";
+            this.Text = "ProjectRails";
             this.Load += new System.EventHandler(this.formMain_Load);
             this.Shown += new System.EventHandler(this.formMain_Shown);
             this.Resize += new System.EventHandler(this.formMain_Resize);

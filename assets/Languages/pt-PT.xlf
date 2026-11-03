@@ -24,8 +24,8 @@
 			<group id="openbve">
 				<group id="program">
 					<trans-unit id="title">
-						<source>OpenBVE</source>
-						<target>OpenBVE</target>
+						<source>ProjectRails</source>
+						<target>ProjectRails</target>
 					</trans-unit>
 				</group>
 				<group id="about">
@@ -34,16 +34,16 @@
 						<target>Acerca de</target>
 					</trans-unit>
 					<trans-unit id="description">
-						<source>OpenBVE is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nThis program was initially developed by Michelle, and is released into the public domain where legally possible.</source>
-						<target>O OpenBVE é um simulador grátis de código aberto e multiplataforma de condução de comboios, que incorpora suporte para cenários e cabinas 2D e 3D.\r\n\r\nEste programa foi inicialmente desenvolvido por Michelle e está disponível ao público onde legalmente possível.</target>
+						<source>ProjectRails is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nProjectRails is a fork of OpenBVE, which was initially developed by Michelle, and is released into the public domain where legally possible.</source>
+						<target>O ProjectRails é um simulador grátis de código aberto e multiplataforma de condução de comboios, que incorpora suporte para cenários e cabinas 2D e 3D.\r\n\r\nEste programa foi inicialmente desenvolvido por Michelle e está disponível ao público onde legalmente possível.</target>
 					</trans-unit>
 					<trans-unit id="open_source_licenses">
 						<source>Open Source Licenses</source>
 						<target>Licença de Código Aberto</target>
 					</trans-unit>
 					<trans-unit id="open_source_licenses_header">
-						<source>OpenBVE makes use of several open-source libraries, whose licenses are reproduced below:</source>
-						<target>O OpenBVE utiliza várias bibliotecas de código aberto, cujas licenças são reproduzidas abaixo:</target>
+						<source>ProjectRails makes use of several open-source libraries, whose licenses are reproduced below:</source>
+						<target>O ProjectRails utiliza várias bibliotecas de código aberto, cujas licenças são reproduzidas abaixo:</target>
 					</trans-unit>
 					<trans-unit id="close">
 						<source>Close</source>
@@ -290,8 +290,8 @@
 						<target>Se está a tentar instalar acessórios nos Ficheiros de Programas ou directórios de Dados de Programas, isso pode exigir permissão de administrador. \r\n\r\n Isto não é recomendado por motivos de segurança.</target>
 					</trans-unit>
 					<trans-unit id="database_newer_expected">
-						<source>The package database version appears to be a newer version than supported by this copy of OpenBVE.</source>
-						<target>A versão da base de dados do pacote parece ser mais recente que a suportada por esta edição do OpenBVE.</target>
+						<source>The package database version appears to be a newer version than supported by this copy of ProjectRails.</source>
+						<target>A versão da base de dados do pacote parece ser mais recente que a suportada por esta edição do ProjectRails.</target>
 					</trans-unit>
 					<trans-unit id="database_invalid_xml">
 						<source>The package database XML was invalid, and has been re-created.</source>
@@ -644,8 +644,8 @@
 						<target>Instala um pacote</target>
 					</trans-unit>
 					<trans-unit id="install_invalid">
-						<source>This file does not appear to be a valid OpenBVE package.</source>
-						<target>Este ficheiro não parece ser um pacote válido do OpenBVE.</target>
+						<source>This file does not appear to be a valid ProjectRails package.</source>
+						<target>Este ficheiro não parece ser um pacote válido do ProjectRails.</target>
 					</trans-unit>
 					<trans-unit id="install_version_error">
 						<source>Package Version Error</source>
@@ -1020,8 +1020,8 @@
 						<target>Falhou a criação do seguinte ficheiro: \r \n</target>
 					</trans-unit>
 					<trans-unit id="database_newer_expected">
-						<source>The package database version appears to be a newer version than supported by this copy of OpenBVE.</source>
-						<target state="translated">A versão do pacote da base de dados parece ser mais recente que a suportada por esta cópia do OpenBVE.</target>
+						<source>The package database version appears to be a newer version than supported by this copy of ProjectRails.</source>
+						<target state="translated">A versão do pacote da base de dados parece ser mais recente que a suportada por esta cópia do ProjectRails.</target>
 					</trans-unit>
 					<trans-unit id="database_invalid_xml">
 						<source>The package database XML was invalid, and has been re-created.</source>
@@ -4262,8 +4262,8 @@
 						<target>Outras funcionalidades</target>
 					</trans-unit>
 					<trans-unit id="note">
-						<source>Please note: Features found on this page may require the following minimum version of OpenBVE:</source>
-						<target>Nota: As funcionalidades desta página podem requerer a seguinte versão mínima do OpenBVE:</target>
+						<source>Please note: Features found on this page may require the following minimum version of ProjectRails:</source>
+						<target>Nota: As funcionalidades desta página podem requerer a seguinte versão mínima do ProjectRails:</target>
 					</trans-unit>
 					<trans-unit id="loco_brake">
 						<source>Locomotive Brake</source>

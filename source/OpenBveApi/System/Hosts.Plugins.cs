@@ -56,7 +56,7 @@ namespace OpenBveApi.Hosts
 								 * Probably built against a newer API version.
 								 */
 
-								builder.Append("Plugin ").Append(System.IO.Path.GetFileName(file)).AppendLine(" failed to load. \n \n Please check that you are using the most recent version of OpenBVE.");
+								builder.Append("Plugin ").Append(System.IO.Path.GetFileName(file)).AppendLine(" failed to load. \n \n Please check that you are using the most recent version of ProjectRails.");
 
 							}
 							else
@@ -124,7 +124,7 @@ namespace OpenBveApi.Hosts
 			Plugins = list.ToArray();
 			if (Plugins.Length == 0)
 			{
-				errorMessage = "No available content loading plugins were found." + Environment.NewLine + " Please re-download OpenBVE.";
+				errorMessage = "No available content loading plugins were found." + Environment.NewLine + " Please re-download ProjectRails.";
 				return false;
 			}
 			errorMessage = builder.ToString().Trim(new char[] { });

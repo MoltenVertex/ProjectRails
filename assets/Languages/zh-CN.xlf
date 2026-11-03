@@ -23,8 +23,8 @@
 			<group id="openbve">
 				<group id="program">
 					<trans-unit id="title">
-						<source>OpenBVE</source>
-						<target>OpenBVE</target>
+						<source>ProjectRails</source>
+						<target>ProjectRails</target>
 					</trans-unit>
 				</group>
 				<group id="about">
@@ -33,13 +33,13 @@
 						<target>关于</target>
 					</trans-unit>
 					<trans-unit id="description">
-						<source>OpenBVE is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nThis program was initially developed by Michelle, and is released into the public domain where legally possible.</source>
+						<source>ProjectRails is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nProjectRails is a fork of OpenBVE, which was initially developed by Michelle, and is released into the public domain where legally possible.</source>
 					</trans-unit>
 					<trans-unit id="open_source_licenses">
 						<source>Open Source Licenses</source>
 					</trans-unit>
 					<trans-unit id="open_source_licenses_header">
-						<source>OpenBVE makes use of several open-source libraries, whose licenses are reproduced below:</source>
+						<source>ProjectRails makes use of several open-source libraries, whose licenses are reproduced below:</source>
 					</trans-unit>
 					<trans-unit id="close">
 						<source>Close</source>
@@ -622,8 +622,8 @@
 						<target>安装一个扩展包</target>
 					</trans-unit>
 					<trans-unit id="install_invalid">
-						<source>This file does not appear to be a valid OpenBVE package.</source>
-						<target>这个文件显然不是一个OpenBVE扩展包。</target>
+						<source>This file does not appear to be a valid ProjectRails package.</source>
+						<target>这个文件显然不是一个ProjectRails扩展包。</target>
 					</trans-unit>
 					<trans-unit id="install_version_error">
 						<source>Package Version Error</source>
@@ -997,8 +997,8 @@
 						<target>创建文件失败:  \r \n</target>
 					</trans-unit>
 					<trans-unit id="database_newer_expected">
-						<source>The package database version appears to be a newer version than supported by this copy of OpenBVE.</source>
-						<target>您计算机上目前存储着的扩展包数据库是由更新版的OpenBVE创建的，本版本无法支持。</target>
+						<source>The package database version appears to be a newer version than supported by this copy of ProjectRails.</source>
+						<target>您计算机上目前存储着的扩展包数据库是由更新版的ProjectRails创建的，本版本无法支持。</target>
 					</trans-unit>
 					<trans-unit id="database_invalid_xml">
 						<source>The package database XML was invalid, and has been re-created.</source>
@@ -4179,8 +4179,8 @@
 						<target>扩展特性</target>
 					</trans-unit>
 					<trans-unit id="note">
-						<source>Please note: Features found on this page may require the following minimum version of OpenBVE:</source>
-						<target>请注意: 本页特性需要OpenBVE的至少以下版本: </target>
+						<source>Please note: Features found on this page may require the following minimum version of ProjectRails:</source>
+						<target>请注意: 本页特性需要ProjectRails的至少以下版本: </target>
 					</trans-unit>
 					<trans-unit id="loco_brake">
 						<source>Locomotive Brake</source>

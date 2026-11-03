@@ -5,7 +5,7 @@
 
 echo "Attempting to create Apple DMG"
 for i in {1..10}; do
-	if /usr/bin/sudo /usr/bin/hdiutil create macbuild.dmg -volname "OpenBVE" -fs HFS+ -srcfolder "mac/OpenBVE.app"; then
+	if /usr/bin/sudo /usr/bin/hdiutil create macbuild.dmg -volname "ProjectRails" -fs HFS+ -srcfolder "mac/OpenBVE.app"; then
 		echo "Successfully created DMG on attempt $i"
 		break
 	elif [[ $i -eq 10 ]]; then

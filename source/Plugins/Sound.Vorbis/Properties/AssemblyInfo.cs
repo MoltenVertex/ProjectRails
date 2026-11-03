@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Supports loading Vorbis sounds.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("openBVE")]
+[assembly: AssemblyProduct("ProjectRails")]
 [assembly: AssemblyCopyright("The openBVE Project")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

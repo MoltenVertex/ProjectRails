@@ -23,26 +23,26 @@
 			<group id="openbve">
 				<group id="program">
 					<trans-unit id="title">
-						<source>OpenBVE</source>
-						<target>OpenBVE</target>
+						<source>ProjectRails</source>
+						<target>ProjectRails</target>
 					</trans-unit>
 				</group>
 				<group id="about">
 					<trans-unit id="title">
 						<source>About</source>
-						<target>關於OpenBVE</target>
+						<target>關於ProjectRails</target>
 					</trans-unit>
 					<trans-unit id="description">
-						<source>OpenBVE is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nThis program was initially developed by Michelle, and is released into the public domain where legally possible.</source>
-						<target>OpenBVE 是一款免費，開源及跨平台的火車模擬器，支援 2D / 3D 駕駛室和沿途景色。\r\n\r\n此程式最初由 Michelle 開發，並在合法的情況下發佈到公眾領域 (Public Domain)。</target>
+						<source>ProjectRails is a free and open-source multi-platform train simulator, featuring support for 2D and 3D cabs and scenery.\r\n\r\nProjectRails is a fork of OpenBVE, which was initially developed by Michelle, and is released into the public domain where legally possible.</source>
+						<target>ProjectRails 是一款免費，開源及跨平台的火車模擬器，支援 2D / 3D 駕駛室和沿途景色。\r\n\r\n此程式最初由 Michelle 開發，並在合法的情況下發佈到公眾領域 (Public Domain)。</target>
 					</trans-unit>
 					<trans-unit id="open_source_licenses">
 						<source>Open Source Licenses</source>
 						<target>開源軟件授權</target>
 					</trans-unit>
 					<trans-unit id="open_source_licenses_header">
-						<source>OpenBVE makes use of several open-source libraries, whose licenses are reproduced below:</source>
-						<target>OpenBVE 使用了多個開源的函式庫(library)，其軟件授權如下:</target>
+						<source>ProjectRails makes use of several open-source libraries, whose licenses are reproduced below:</source>
+						<target>ProjectRails 使用了多個開源的函式庫(library)，其軟件授權如下:</target>
 					</trans-unit>
 					<trans-unit id="close">
 						<source>Close</source>
@@ -154,7 +154,7 @@
 					</trans-unit>
 					<trans-unit id="about">
 						<source>About</source>
-						<target>關於OpenBVE</target>
+						<target>關於ProjectRails</target>
 					</trans-unit>
 				</group>
 				<group id="mode">
@@ -626,8 +626,8 @@
 						<target>安裝擴展包</target>
 					</trans-unit>
 					<trans-unit id="install_invalid">
-						<source>This file does not appear to be a valid OpenBVE package.</source>
-						<target>此檔案不是有效的OpenBVE擴展包。</target>
+						<source>This file does not appear to be a valid ProjectRails package.</source>
+						<target>此檔案不是有效的ProjectRails擴展包。</target>
 					</trans-unit>
 					<trans-unit id="install_version_error">
 						<source>Package Version Error</source>
@@ -1002,7 +1002,7 @@
 						<target>無法創建以下文件: \r \n</target>
 					</trans-unit>
 					<trans-unit id="database_newer_expected">
-						<source>The package database version appears to be a newer version than supported by this copy of OpenBVE.</source>
+						<source>The package database version appears to be a newer version than supported by this copy of ProjectRails.</source>
 						<target>擴展包資料庫XML無效, 並已重新制造</target>
 					</trans-unit>
 					<trans-unit id="database_invalid_xml">
@@ -4249,8 +4249,8 @@
 						<target>擴展功能</target>
 					</trans-unit>
 					<trans-unit id="note">
-						<source>Please note: Features found on this page may require the following minimum version of OpenBVE:</source>
-						<target>請注意: 本頁顯示的功能需要至少以下的OpenBVE版本:</target>
+						<source>Please note: Features found on this page may require the following minimum version of ProjectRails:</source>
+						<target>請注意: 本頁顯示的功能需要至少以下的ProjectRails版本:</target>
 					</trans-unit>
 					<trans-unit id="loco_brake">
 						<source>Locomotive Brake</source>

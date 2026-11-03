@@ -2730,7 +2730,7 @@
 			this.labelExtendedNote.Size = new System.Drawing.Size(607, 32);
 			this.labelExtendedNote.TabIndex = 0;
 			this.labelExtendedNote.Text = "Please note: Features found on this page may require the following minimum versio" +
-    "n of openBVE:";
+    "n of ProjectRails:";
 			// 
 			// panelPane
 			// 

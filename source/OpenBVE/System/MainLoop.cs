@@ -587,7 +587,7 @@ namespace OpenBve
 							 * are most likely falling down. This also means the error logger etc.
 							 * are unlikely to work (or be useful)
 							 */
-							message = @"Total memory usage exceeded the 32-bit memory limit. \r\nPlease use the 64-bit version of OpenBVE to run this content.";
+							message = @"Total memory usage exceeded the 32-bit memory limit. \r\nPlease use the 64-bit version of ProjectRails to run this content.";
 							Environment.Exit(0);
 						}
 						message += "GL_OUT_OF_MEMORY";

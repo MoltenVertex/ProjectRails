@@ -68,24 +68,24 @@ release: openbve-release
 openbve: openbve-debug
 
 openbve-debug: restore
-	$(info Building OpenBVE in debug mode....)
+	$(info Building ProjectRails in debug mode....)
 	$(MSBUILD) /t:OpenBve /p:Configuration=Debug OpenBVE.sln
 	@cp source/LibRender2/OpenTK.dll.config bin_debug/OpenTK.dll.config
 
 openbve-release: restore
-	$(info Building OpenBVE in release mode....)
+	$(info Building ProjectRails in release mode....)
 	$(MSBUILD) /t:OpenBve /p:Configuration=Release OpenBVE.sln
 	@cp source/LibRender2/OpenTK.dll.config bin_release/OpenTK.dll.config
 
 all: all-debug
 
 all-debug: restore
-	$(info Building OpenBVE and developer tools in debug mode....)
+	$(info Building ProjectRails and developer tools in debug mode....)
 	$(MSBUILD) /t:build /p:Configuration=Debug OpenBVE.sln
 	@cp source/LibRender2/OpenTK.dll.config bin_debug/OpenTK.dll.config
 
 all-release: restore
-	$(info Building OpenBVE and developer tools in release mode....)
+	$(info Building ProjectRails and developer tools in release mode....)
 	$(MSBUILD) /t:build /p:Configuration=Release OpenBVE.sln
 	@cp source/LibRender2/OpenTK.dll.config bin_release/OpenTK.dll.config
 
@@ -132,7 +132,7 @@ prequisite-check:
  ifeq "$(call GreaterVersion, $(MONO_VERSION), $(MIN_MONO_VERSION))" "$(MONO_VERSION)"
  #Nothing
  else
- $(info OpenBVE requires a minimum Mono version of 5.20)
+ $(info ProjectRails requires a minimum Mono version of 5.20)
  $(info Please install the latest version of Mono from $(blue)https://www.mono-project.com/$(reset))
  $(error )
  endif
@@ -179,13 +179,13 @@ prequisite-check:
  $(bash $(NUGET) update)
 else 
  $(info Unable to determine the nuget version installed.)
- $(info OpenBVE requires a minimum nuget version of 2.16- The build will fail with versions below this.)
+ $(info ProjectRails requires a minimum nuget version of 2.16- The build will fail with versions below this.)
  endif
  else
  ifeq ("$(NUGET) $(nuget.exe))","")
  $(shell $(NUGET) update)
  else
- $(info OpenBVE requires a minimum nuget version of 2.16)
+ $(info ProjectRails requires a minimum nuget version of 2.16)
  $(info Please run $(red)nuget update -self$(reset) with administrative priveledges.)
  $(error )
  endif
@@ -213,12 +213,12 @@ $(MAC_BUILD_RESULT): all-release
 	@echo Renaming final output file
 ifeq (, $(PROGRAM_VERSION))
 	@echo This is a $(COLOR_BLUE)Daily build$(COLOR_END)
-	@echo Final filename: $(COLOR_RED)OpenBVE-$$(date '+%F').dmg$(COLOR_END)
-	@mv macbuild.dmg OpenBVE-$$(date '+%F').dmg
+	@echo Final filename: $(COLOR_RED)ProjectRails-$$(date '+%F').dmg$(COLOR_END)
+	@mv macbuild.dmg ProjectRails-$$(date '+%F').dmg
 else
 	@echo This is a $(COLOR_YELLOW)Tagged Release build$(COLOR_END)
-	@echo Final filename: $(COLOR_RED)OpenBVE-$(PROGRAM_VERSION).dmg$(COLOR_END)
-	@mv macbuild.dmg OpenBVE-$(PROGRAM_VERSION).dmg
+	@echo Final filename: $(COLOR_RED)ProjectRails-$(PROGRAM_VERSION).dmg$(COLOR_END)
+	@mv macbuild.dmg ProjectRails-$(PROGRAM_VERSION).dmg
 endif
 
 $(LINUX_BUILD_RESULT): all-release
@@ -228,12 +228,12 @@ $(LINUX_BUILD_RESULT): all-release
 	@echo Renaming final output file
 ifeq (, $(PROGRAM_VERSION))
 	@echo This is a $(COLOR_BLUE)Daily build$(COLOR_END)
-	@echo Final filename: $(COLOR_RED)OpenBVE-$$(date '+%F').zip$(COLOR_END)
-	@mv linuxbuild.zip OpenBVE-$$(date '+%F').zip
+	@echo Final filename: $(COLOR_RED)ProjectRails-$$(date '+%F').zip$(COLOR_END)
+	@mv linuxbuild.zip ProjectRails-$$(date '+%F').zip
 else
 	@echo This is a $(COLOR_YELLOW)Tagged Release build$(COLOR_END)
-	@echo Final filename: $(COLOR_RED)OpenBVE-$(PROGRAM_VERSION).zip$(COLOR_END)
-	@mv linuxbuild.zip OpenBVE-$(PROGRAM_VERSION).zip
+	@echo Final filename: $(COLOR_RED)ProjectRails-$(PROGRAM_VERSION).zip$(COLOR_END)
+	@mv linuxbuild.zip ProjectRails-$(PROGRAM_VERSION).zip
 endif
 
 $(DEBIAN_BUILD_RESULT): all-release
@@ -252,10 +252,10 @@ $(DEBIAN_BUILD_RESULT): all-release
 	@echo Renaming final output file
 ifeq (, $(PROGRAM_VERSION))
 	@echo This is a $(COLOR_BLUE)Daily build$(COLOR_END)
-	@echo Final filename: $(COLOR_RED)OpenBVE-$$(date '+%F').deb$(COLOR_END)
-	@mv installers/debian.deb OpenBVE-$$(date '+%F').deb
+	@echo Final filename: $(COLOR_RED)ProjectRails-$$(date '+%F').deb$(COLOR_END)
+	@mv installers/debian.deb ProjectRails-$$(date '+%F').deb
 else
 	@echo This is a $(COLOR_YELLOW)Tagged Release build$(COLOR_END)
-	@echo Final filename: $(COLOR_RED)OpenBVE-$(PROGRAM_VERSION).deb$(COLOR_END)
-	@mv "$(ROOT_DIR)/installers/debian.deb" OpenBVE-$(PROGRAM_VERSION).deb
+	@echo Final filename: $(COLOR_RED)ProjectRails-$(PROGRAM_VERSION).deb$(COLOR_END)
+	@mv "$(ROOT_DIR)/installers/debian.deb" ProjectRails-$(PROGRAM_VERSION).deb
 endif

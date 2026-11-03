@@ -68,7 +68,7 @@ namespace TrainEditor2.IO.Trains.TrainDat
 								{
 									if (version > currentVersion)
 									{
-										Interface.AddMessage(MessageType.Warning, false, $"The train.dat {fileName} was created with a newer version of openBVE. Please check for an update.");
+										Interface.AddMessage(MessageType.Warning, false, $"The train.dat {fileName} was created with a newer version of ProjectRails. Please check for an update.");
 									}
 								}
 								else

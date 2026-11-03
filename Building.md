@@ -1,6 +1,8 @@
-# Building openBVE from source
+# Building ProjectRails from source
 
-This file is a WIP set of instructions for building OpenBVE from source.
+This file is a WIP set of instructions for building ProjectRails from source.
+ProjectRails is a fork of [OpenBVE](https://openbve-project.net); see the
+[Readme](Readme.md#attribution) for upstream credits.
 
 ## Prerequisites
 
@@ -91,13 +93,13 @@ NOTE: Depending on the install type you select, Mono will not install all compon
 #### When to use Mono
 
 1. Start "Open Mono Command Prompt" from the start menu.
-2. Open the main openBVE source directory in this terminal.
+2. Open the main ProjectRails source directory in this terminal.
 3. Restore the packages as required. `nuget restore OpenBVE.sln`
 4. Build the solution. `msbuild OpenBVE.sln`
 
 ### Mac / Linux
 
-1. Open the main openBVE source directory in the terminal.
+1. Open the main ProjectRails source directory in the terminal.
 2. You may either build using the makefile, which supports the following options:
    - `make` - Restores the NuGet packages only.
    - `make all-release` - Creates a release build.

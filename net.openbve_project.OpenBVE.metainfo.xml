@@ -5,16 +5,16 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>BSD-2-Clause</project_license>
 
-  <name>OpenBVE</name>
+  <name>ProjectRails</name>
   <summary>Free train simulator</summary>
 
   <developer id="net.openbve_project">
-    <name>OpenBVE Project</name>
+    <name>ProjectRails</name>
   </developer>
 
   <description>
     <p>
-      OpenBVE is an open-source train driving simulator.
+      ProjectRails is an open-source train driving simulator, based on the OpenBVE project.
       It features detailed per-car simulation of the brake systems, friction, air resistance, toppling and more.
     </p>
   </description>

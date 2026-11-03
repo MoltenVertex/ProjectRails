@@ -73,7 +73,6 @@ Source: "InstallerData\NDP461-KB3102438-Web.exe"; DestDir: "{app}"; Flags: delet
 Name: "{userdesktop}\{#MyAppName}"; Filename: "{app}\{#OpenBVEExecutable}"; Tasks: desktopicon
 Name: "{userdesktop}\ProjectRails Addons"; Filename:"{code:GetDataDir}"; Tasks: desktopicon2
 Name: "{group}\{#MyAppName}"; Filename: "{app}\OpenBVE.exe"
-Name: "{group}\{#MyAppName} (32-bit)"; Filename: "{app}\OpenBVE-32.exe"
 Name: "{group}\Developer Tools\Route Viewer"; Filename: "{app}\RouteViewer.exe"
 Name: "{group}\Developer Tools\Object Viewer"; Filename: "{app}\ObjectViewer.exe"
 Name: "{group}\Developer Tools\Train Editor"; Filename: "{app}\TrainEditor2.exe"

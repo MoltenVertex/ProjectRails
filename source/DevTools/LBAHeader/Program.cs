@@ -1,4 +1,4 @@
-﻿//Simplified BSD License (BSD-2-Clause)
+//Simplified BSD License (BSD-2-Clause)
 //
 //Copyright (c) 2020, Christopher Lees, The OpenBVE Project
 //
@@ -24,7 +24,6 @@
 
 using System;
 using System.IO;
-using Mono.Cecil;
 
 namespace LBAHeader
 {
@@ -56,7 +55,6 @@ namespace LBAHeader
 				return;
 			}
 			AddLbaFlag(f);
-			Add32BitFlag(f);
 			// ReSharper disable once AssignNullToNotNullAttribute
 			f = Path.Combine(Path.GetDirectoryName(f), "RouteViewer.exe");
 			if (!File.Exists(f))
@@ -66,7 +64,6 @@ namespace LBAHeader
 				return;
 			}
 			AddLbaFlag(f);
-			Add32BitFlag(f);
 		}
 
 		/// <summary>Marks an executable as LBA aware</summary>
@@ -86,60 +83,6 @@ namespace LBAHeader
 				Console.WriteLine("A problem occured whilst attempting to set the LBA flag for executable " + f);
 			}
 		}
-		
-		/// <summary>Marks an ANYCPU executable as 32-bit preferred</summary>
-		public static void Add32BitFlag(string fileToProcess)
-		{
-			string configFile = fileToProcess + ".config";
-			string finalFileName = fileToProcess.Replace(".exe", "-32.exe");
-			Console.WriteLine("Creating 32-bit preferred copy of executable " + fileToProcess);
-			try
-			{
-				ModuleDefinition modDef = ModuleDefinition.ReadModule(fileToProcess);
-				if (modDef == null)
-				{
-					Console.WriteLine("An unexpected error occured whilst attempting to apply Corflags to executable " + fileToProcess);
-					return;
-				}
-				modDef.Attributes |= ModuleAttributes.Required32Bit;
-				try
-				{
-					modDef.Write(finalFileName);
-				}
-				catch
-				{
-					Console.WriteLine("Failed to write 32-bit executable to " + finalFileName);
-					throw;
-				}
-			}
-			catch (FileNotFoundException)
-			{
-				Console.WriteLine("Unable to find file " + fileToProcess);
-			}
-			catch (BadImageFormatException)
-			{
-				Console.WriteLine(fileToProcess + " does not appear to have a valid Win32 Managed header.");
-			}
-			catch
-			{
-				Console.WriteLine("An unexpected error occured whilst attempting to apply Corflags to executable " + fileToProcess);
-			}
 
-			if (File.Exists(configFile))
-			{
-				//Also copy the application config file, so that LoadFromRemoteSources etc. are preserved
-				//No clue why a File.Copy command fails on CI
-				try
-				{
-					byte[] bytes = File.ReadAllBytes(configFile);
-					File.WriteAllBytes(configFile.Replace(".exe", "-32.exe"), bytes);
-				}
-				catch
-				{
-					Console.WriteLine("An unexpected error occured whilst attempting to create the 32-bit .exe.config file.");
-				}
-				
-			}
-		}
 	}
 }

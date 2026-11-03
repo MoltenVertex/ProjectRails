@@ -68,7 +68,6 @@ Source: "InstallerData\filesystem_programfolder.cfg"; DestDir: "{app}\";
 Source: "InstallerData\NDP461-KB3102438-Web.exe"; DestDir: "{app}"; Flags: deleteafterinstall; AfterInstall: AfterMyProgInstall('AllFilesCopy')
 [Icons]
 Name: "{userdesktop}\{#MyAppName}"; Filename: "{app}\{#OpenBVEExecutable}"; Tasks: desktopicon
-Name: "{group}\{#MyAppName} (32-bit)"; Filename: "{app}\OpenBVE-32.exe"
 Name: "{userdesktop}\ProjectRails Addons"; Filename:"{code:GetDataDir}"; Tasks: desktopicon2
 Name: "{group}\{#MyAppName}"; Filename: "{app}\OpenBVE.exe"
 Name: "{group}\Developer Tools\Route Viewer"; Filename: "{app}\RouteViewer.exe"

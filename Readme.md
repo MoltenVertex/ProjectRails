@@ -1,10 +1,11 @@
-[![Build Status](https://dev.azure.com/leezer3/OpenBVE/_apis/build/status/leezer3.OpenBVE?branchName=master)](https://dev.azure.com/leezer3/OpenBVE/_build/latest?definitionId=1&branchName=master)
+## ProjectRails
 
-[![Build status](https://ci.appveyor.com/api/projects/status/p4d983eclo738hjo?svg=true)](https://ci.appveyor.com/project/leezer3/openbve)
+ProjectRails is a 3D cab based train simulator. It is a detached fork (not a GitHub fork) of
+[OpenBVE](https://openbve-project.net), built on top of the
+[adfriz/OpenBVE](https://github.com/adfriz/OpenBVE) fork, which in turn is based on
+[leezer3/OpenBVE](https://github.com/leezer3/OpenBVE).
 
-## OpenBVE Source Code - Readme
-
-This repository contains the source code for the Train Simulator OpenBVE, a 3D cab based simulator.
+This repository contains the source code for ProjectRails.
 
 Supported route formats:
 * Native CSV / RW.
@@ -15,7 +16,7 @@ Supported train formats:
 * BVE2 / BVE4, with native OpenBVE extensions.
 * Microsoft Train Simulator (MSTS) - Partial support, work in progress.
 
-OpenBVE is built in OpenGL, using the OpenTK framework for windowing.
+ProjectRails is built in OpenGL, using the OpenTK framework for windowing.
 
 ### Fixed Errata
 
@@ -23,14 +24,15 @@ These are described fully [here](https://github.com/leezer3/OpenBVE/wiki/Errata)
 
 ### Nightly Builds
 
-Automatically generated daily builds are available [here](http://vps.bvecornwall.co.uk/OpenBVE/Builds/).
+Automatically generated daily builds of the upstream project are available [here](http://vps.bvecornwall.co.uk/OpenBVE/Builds/).
 
 ### Developer Documentation
+
 Documentation for development of add-ons (update version of docs originally written by _michelle_) can be found [here](https://openbve-project.net/documentation_hugo/en/).
 
 ### Packages
 
-OpenBVE now supports the installation of 'package files' , which are intended as a replacement for the now defunct managed content. These are described fully [here](http://openbve-project.net/packages/).
+OpenBVE supports the installation of 'package files' , which are intended as a replacement for the now defunct managed content. These are described fully [here](http://openbve-project.net/packages/).
 
 ### How to build
 
@@ -38,16 +40,42 @@ This build has been tested to compile correctly using Visual Studio 2017 onwards
 
 ### Contributing
 
-Please see the [Contributors File](Contributing.md) for a list of contributors, and basic guidelines for contributing to the development of OpenBVE.
+Please see the [Contributors File](Contributing.md) for a list of contributors, and basic
+guidelines for contributing to the development of OpenBVE.
 
+### Upstream and syncing
+
+Changes and bug fixes from the parent project can be pulled in at any time:
+
+```
+git fetch upstream
+git merge upstream/master
+```
+
+The `upstream` remote points at `adfriz/OpenBVE` (fetch only) and `origin` points at
+this repository, so `git push` always goes to ProjectRails and never to the parent project.
+
+### Attribution
+
+ProjectRails is a fork and the overwhelming majority of this codebase is the work of the
+OpenBVE project and its contributors.
+
+* **OpenBVE** - originally founded by _Michelle_, maintained over the last 10+ years by
+  _leezer3_ and many contributors.
+  Project website: https://openbve-project.net
+  Source code: https://github.com/leezer3/OpenBVE
+* **[adfriz/OpenBVE](https://github.com/adfriz/OpenBVE)** - the fork this project is
+  directly based on.
+
+Please keep these credits intact when redistributing ProjectRails or builds of it.
 
 ### Links
 
-**Project Website**:
+**Upstream project website**:
 
 https://openbve-project.net
 
-Project Source Code on GitHub: https://github.com/leezer3/OpenBVE
+Upstream source code on GitHub: https://github.com/leezer3/OpenBVE
 
 **Discussion Boards**:
 

@@ -17,12 +17,12 @@ namespace RouteViewer
     internal class RouteViewer : GameWindow
     {
         //Deliberately specify the default constructor with various overrides
-        public RouteViewer(int width, int height, GraphicsMode currentGraphicsMode, string windowTitle, GameWindowFlags @default): base (width, height, currentGraphicsMode, windowTitle, @default)
+        public RouteViewer(int width, int height, GraphicsMode currentGraphicsMode, string windowTitle, GameWindowFlags @default): base (width, height, currentGraphicsMode, windowTitle, @default, DisplayDevice.Default, 4, 1, GraphicsContextFlags.ForwardCompatible)
         {
             Init();
         }
 
-        public RouteViewer(int width, int height, GraphicsMode currentGraphicsMode, string windowTitle, GameWindowFlags @default, GraphicsContextFlags flags): base(width, height, currentGraphicsMode, windowTitle, @default, DisplayDevice.Default, 3, 3, flags)
+        public RouteViewer(int width, int height, GraphicsMode currentGraphicsMode, string windowTitle, GameWindowFlags @default, GraphicsContextFlags flags): base(width, height, currentGraphicsMode, windowTitle, @default, DisplayDevice.Default, 4, 1, flags)
         {
             if (IsApple64)
             {
@@ -51,7 +51,7 @@ namespace RouteViewer
 			}
         }
 
-        // OS-X needs an explicit GL3 forward-compatible context, otherwise it falls back to GL 2.1 and the 410 shaders fail
+        // OS-X needs an explicit GL 4.1 forward-compatible context, otherwise it falls back to GL 2.1 and the 410 shaders fail
         public static RouteViewer Create(int width, int height, GraphicsMode mode, string title)
         {
             return IsApple64 || Interface.CurrentOptions.ForceForwardsCompatibleContext

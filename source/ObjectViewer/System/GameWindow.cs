@@ -16,13 +16,13 @@ namespace ObjectViewer
     {
         //Deliberately specify the default constructor with various overrides
         public ObjectViewer(int width, int height, GraphicsMode currentGraphicsMode, string windowTitle,
-            GameWindowFlags @default) : base(width, height, currentGraphicsMode, windowTitle, @default)
+            GameWindowFlags @default) : base(width, height, currentGraphicsMode, windowTitle, @default, DisplayDevice.Default, 4, 1, GraphicsContextFlags.ForwardCompatible)
         {
             Init();
         }
 
         public ObjectViewer(int width, int height, GraphicsMode currentGraphicsMode, string windowTitle,
-            GameWindowFlags @default, GraphicsContextFlags flags) : base(width, height, currentGraphicsMode, windowTitle, @default, DisplayDevice.Default, 3, 3, flags)
+            GameWindowFlags @default, GraphicsContextFlags flags) : base(width, height, currentGraphicsMode, windowTitle, @default, DisplayDevice.Default, 4, 1, flags)
         {
             if (IsApple64)
             {
@@ -45,7 +45,7 @@ namespace ObjectViewer
             }
         }
 
-        // OS-X needs an explicit GL3 forward-compatible context, otherwise it falls back to GL 2.1 and the 410 shaders fail
+        // OS-X needs an explicit GL 4.1 forward-compatible context, otherwise it falls back to GL 2.1 and the 410 shaders fail
         public static ObjectViewer Create(int width, int height, GraphicsMode mode, string title)
         {
             return IsApple64 || Interface.CurrentOptions.ForceForwardsCompatibleContext

@@ -49,7 +49,7 @@
     <RegisterForComInterop>False</RegisterForComInterop>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
     <BaseAddress>4194304</BaseAddress>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <FileAlignment>4096</FileAlignment>
     <Prefer32Bit>false</Prefer32Bit>
     <LangVersion>6</LangVersion>
@@ -66,7 +66,7 @@
     <RegisterForComInterop>False</RegisterForComInterop>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
     <BaseAddress>4194304</BaseAddress>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <FileAlignment>4096</FileAlignment>
     <Prefer32Bit>false</Prefer32Bit>
     <LangVersion>6</LangVersion>
@@ -84,7 +84,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <FileAlignment>4096</FileAlignment>
     <DebugType>Full</DebugType>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>6</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>

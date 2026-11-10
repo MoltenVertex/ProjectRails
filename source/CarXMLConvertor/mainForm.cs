@@ -107,7 +107,7 @@ namespace CarXmlConvertor
 		        updateLogBoxText += "INFO: An existing train.xml file was detected." + Environment.NewLine;
 		        try
 		        {
-			        programVersion = FileVersionInfo.GetVersionInfo("OpenBve.exe");
+			        programVersion = FileVersionInfo.GetVersionInfo("ProjectRails.exe");
 		        }
 		        catch
 		        {

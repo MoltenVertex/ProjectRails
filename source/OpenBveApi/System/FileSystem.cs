@@ -80,8 +80,8 @@ namespace OpenBveApi.FileSystem {
 			currentHost = Host;
 			string assemblyFile = Assembly.GetEntryAssembly().Location;
 			string assemblyFolder = Path.GetDirectoryName(assemblyFile);
-			//This copy of openBVE is a special string, and should not be localised
-			string userDataFolder = Path.CombineDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "OpenBve");
+			//This copy of ProjectRails is a special string, and should not be localised
+			string userDataFolder = Path.CombineDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectRails");
 			if (currentHost != null && currentHost.Platform != HostPlatform.MicrosoftWindows)
 			{
 				/*
@@ -93,7 +93,7 @@ namespace OpenBveApi.FileSystem {
 					int i = 0;
 					while (File.Exists(userDataFolder))
 					{
-						userDataFolder = Path.CombineDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "OpenBve-" + i);
+						userDataFolder = Path.CombineDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectRails-" + i);
 						i++;
 						if (i == 10)
 						{
@@ -149,7 +149,7 @@ namespace OpenBveApi.FileSystem {
 			if (File.Exists(configFile)) {
 				return FromConfigurationFile(configFile, Host);
 			}
-			configFile = Path.CombineFile(Path.CombineDirectory(Path.CombineDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "OpenBve"), "Settings"), "filesystem.cfg");
+			configFile = Path.CombineFile(Path.CombineDirectory(Path.CombineDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "ProjectRails"), "Settings"), "filesystem.cfg");
 			if (File.Exists(configFile))
 			{
 				return FromConfigurationFile(configFile, Host);

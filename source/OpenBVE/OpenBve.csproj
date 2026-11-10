@@ -13,7 +13,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OpenBve</RootNamespace>
-    <AssemblyName>OpenBve</AssemblyName>
+    <AssemblyName>ProjectRails</AssemblyName>
     <NoStdLib>False</NoStdLib>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
@@ -64,7 +64,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DebugSymbols>true</DebugSymbols>
-    <DocumentationFile>..\..\bin_release\OpenBve.XML</DocumentationFile>
+    <DocumentationFile>..\..\bin_release\ProjectRails.XML</DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>7.3</LangVersion>
     <Prefer32Bit>false</Prefer32Bit>

@@ -17,16 +17,13 @@ RELEASE_DIR := bin_release
 OUTPUT_DIR  := $(DEBUG_DIR)
 
 # Final output names
-MAC_BUILD_RESULT = macbuild.dmg
+# macOS builds are currently disabled
+#MAC_BUILD_RESULT = macbuild.dmg
 LINUX_BUILD_RESULT = linuxbuild.zip
 DEBIAN_BUILD_RESULT = debianbuild.deb
 
 # Used output name
-ifeq ($(shell uname -s),Darwin) 
-BUILD_RESULT = $(MAC_BUILD_RESULT)
-else
 BUILD_RESULT = $(LINUX_BUILD_RESULT)
-endif
 
 # Colors
 COLOR_BLACK   := "\033[1;30m"
@@ -97,7 +94,7 @@ clean:
 	$(MSBUILD) /t:clean /p:Configuration=Release OpenBVE.sln
 
 	# Release Files
-	rm -f $(MAC_BUILD_RESULT) $(LINUX_BUILD_RESULT)
+	rm -f $(LINUX_BUILD_RESULT)
 
 CP_UPDATE_FLAG = -u
 CP_RECURSE = -r
@@ -106,11 +103,7 @@ ifeq ($(shell uname -s),Darwin)
     CP_RECURSE = -R
 endif 
 
-ifeq ($(shell uname -s),Darwin) 
-publish: $(MAC_BUILD_RESULT)
-else
 publish: $(LINUX_BUILD_RESULT)
-endif
 
 debian: $(DEBIAN_BUILD_RESULT)
 
@@ -193,33 +186,34 @@ else
  
  $(info Attempting to restore nuget packages (This may take a while)....)
 	
-$(MAC_BUILD_RESULT): all-release
-	@rm -rf bin_release/DevTools/
-	@echo $(COLOR_RED)Decompressing $(COLOR_CYAN)installers/mac/MacBundle.tgz$(COLOR_END)
-	# Clear previous Mac build temporary files if they exist
-	@rm -rf mac
-	@rm -rf macbuild.dmg
-	@mkdir mac
-	@tar -C mac -xzf installers/mac/MacBundle.tgz
-	@./VersionCreator.sh
-
-	@echo $(COLOR_RED)Copying build data into $(COLOR_CYAN)OpenBVE.app$(COLOR_END)
-	@cp -r $(RELEASE_DIR)/* mac/OpenBVE.app/Contents/Resources/
-	@test -f mac/OpenBVE.app/Contents/Resources/OpenTK.dll.config || (echo "OpenTK.dll.config is missing from the macOS app bundle"; exit 1)
-
-# Because Azure is iffy on MacOS13, let's try a custom script
-	@echo $(COLOR_RED)Creating $(COLOR_CYAN)$(MAC_BUILD_RESULT)$(COLOR_END)
-	@./DMGScript.sh
-	@echo Renaming final output file
-ifeq (, $(PROGRAM_VERSION))
-	@echo This is a $(COLOR_BLUE)Daily build$(COLOR_END)
-	@echo Final filename: $(COLOR_RED)ProjectRails-$$(date '+%F').dmg$(COLOR_END)
-	@mv macbuild.dmg ProjectRails-$$(date '+%F').dmg
-else
-	@echo This is a $(COLOR_YELLOW)Tagged Release build$(COLOR_END)
-	@echo Final filename: $(COLOR_RED)ProjectRails-$(PROGRAM_VERSION).dmg$(COLOR_END)
-	@mv macbuild.dmg ProjectRails-$(PROGRAM_VERSION).dmg
-endif
+# macOS builds are currently disabled
+#$(MAC_BUILD_RESULT): all-release
+#	@rm -rf bin_release/DevTools/
+#	@echo $(COLOR_RED)Decompressing $(COLOR_CYAN)installers/mac/MacBundle.tgz$(COLOR_END)
+#	# Clear previous Mac build temporary files if they exist
+#	@rm -rf mac
+#	@rm -rf macbuild.dmg
+#	@mkdir mac
+#	@tar -C mac -xzf installers/mac/MacBundle.tgz
+#	@./VersionCreator.sh
+#
+#	@echo $(COLOR_RED)Copying build data into $(COLOR_CYAN)ProjectRails.app$(COLOR_END)
+#	@cp -r $(RELEASE_DIR)/* mac/ProjectRails.app/Contents/Resources/
+#	@test -f mac/ProjectRails.app/Contents/Resources/OpenTK.dll.config || (echo "OpenTK.dll.config is missing from the macOS app bundle"; exit 1)
+#
+## Because Azure is iffy on MacOS13, let's try a custom script
+#	@echo $(COLOR_RED)Creating $(COLOR_CYAN)$(MAC_BUILD_RESULT)$(COLOR_END)
+#	@./DMGScript.sh
+#	@echo Renaming final output file
+#ifneq (, $(PROGRAM_VERSION))
+#	@echo This is a $(COLOR_BLUE)Daily build$(COLOR_END)
+#	@echo Final filename: $(COLOR_RED)ProjectRails-$$(date '+%F').dmg$(COLOR_END)
+#	@mv macbuild.dmg ProjectRails-$$(date '+%F').dmg
+#else
+#	@echo This is a $(COLOR_YELLOW)Tagged Release build$(COLOR_END)
+#	@echo Final filename: $(COLOR_RED)ProjectRails-$(PROGRAM_VERSION).dmg$(COLOR_END)
+#	@mv macbuild.dmg ProjectRails-$(PROGRAM_VERSION).dmg
+#endif
 
 $(LINUX_BUILD_RESULT): all-release
 	@rm -rf bin_release/DevTools/

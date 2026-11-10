@@ -216,7 +216,7 @@ namespace CarXmlConvertor
 			newLines.Add("<Train>");
 			try
 			{
-				FileVersionInfo programVersion = FileVersionInfo.GetVersionInfo("OpenBve.exe");
+				FileVersionInfo programVersion = FileVersionInfo.GetVersionInfo("ProjectRails.exe");
 				newLines.Add("<ConvertorVersion>" + programVersion.FileVersion + "</ConvertorVersion>");
 			}
 			catch

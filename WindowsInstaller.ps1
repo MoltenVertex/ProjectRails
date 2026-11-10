@@ -5,15 +5,15 @@ $InstallerOut = @"
 #define MyAppName "ProjectRails"
 #define MyAppVersion "$args"
 #define MyAppPublisher "ProjectRails"
-#define MyAppURL "http://www.openbve-project.net"
-#define MyDataFolderName "OpenBVE"
-#define OpenBVEExecutable "OpenBve.exe"
+#define MyAppURL ""
+#define MyDataFolderName "ProjectRails"
+#define OpenBVEExecutable "ProjectRails.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{D617A45D-C2F6-44D1-A85C-CA7FFA91F7FC}
+AppId={{CBC3DF5E-1FF9-4080-86AD-2F4A66022EBF}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppPublisher={#MyAppPublisher}
@@ -69,7 +69,7 @@ Source: "InstallerData\NDP461-KB3102438-Web.exe"; DestDir: "{app}"; Flags: delet
 [Icons]
 Name: "{userdesktop}\{#MyAppName}"; Filename: "{app}\{#OpenBVEExecutable}"; Tasks: desktopicon
 Name: "{userdesktop}\ProjectRails Addons"; Filename:"{code:GetDataDir}"; Tasks: desktopicon2
-Name: "{group}\{#MyAppName}"; Filename: "{app}\OpenBVE.exe"
+Name: "{group}\{#MyAppName}"; Filename: "{app}\{#OpenBVEExecutable}"
 Name: "{group}\Developer Tools\Route Viewer"; Filename: "{app}\RouteViewer.exe"
 Name: "{group}\Developer Tools\Object Viewer"; Filename: "{app}\ObjectViewer.exe"
 Name: "{group}\Developer Tools\Train Editor"; Filename: "{app}\TrainEditor2.exe"
@@ -101,8 +101,8 @@ begin
     'NOTE: This may be changed at a later date using the Options dialog.',
     True, False);
 
-  UsagePage.Add('Default  - Use AppData\Roaming\{#MyDataFolderName}\UserData');
-  UsagePage.Add('Program  - Use the UserData folder in the ProjectRails installation directory');
+  UsagePage.Add('Default  - Use AppData\Roaming\{#MyDataFolderName}');
+  UsagePage.Add('Program  - Store the settings in the ProjectRails installation directory');
   UsagePage.Add('Custom   - Select a custom folder');
 
   DataDirPage := CreateInputDirPage(UsagePage.ID,
@@ -243,12 +243,13 @@ FileLines: TArrayOfString;
         end;
         if (UsagePage.SelectedValueIndex = 1) then
         begin
-          Log('Using the UserData folder to store all settings, routes and trains'); 
+          Log('Using the UserData folder to store the settings, and AppData for all routes and trains');
           try
             ForceDirectories(ExpandConstant('{app}\UserData\Settings'));
             FileCopy(ExpandConstant('{app}\filesystem_programfolder.cfg'), ExpandConstant('{app}\UserData\Settings\filesystem.cfg'), True);
             DeleteFile(ExpandConstant('{app}\filesystem_appdata.cfg'));
-            DataDirPage.Values[0] := ExpandConstant('{app}\UserData');
+            DataDirPage.Values[0] := ExpandConstant('{userappdata}\{#MyAppName}\LegacyContent\Railway');
+            DataDirPage.Values[1] := ExpandConstant('{userappdata}\{#MyAppName}\LegacyContent\Train');
           except
             Log('Unexpected error occured whilst creating initial settings');
           end;

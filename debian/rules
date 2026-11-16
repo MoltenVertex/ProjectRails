@@ -9,9 +9,9 @@ override_dh_auto_build:
 	# Get rid of any prior build result
 	rm -rf openbve
 	#Restore NuGet packages required for build
-	nuget restore OpenBVE.sln
+	nuget restore ProjectRails.sln
 	#Build solution
-	xbuild /p:TargetFrameworkVersion="v4.6.1" OpenBVE.sln /p:Configuration=$(DEBUG_CONFIGURATION)
+	xbuild /p:TargetFrameworkVersion="v4.6.1" ProjectRails.sln /p:Configuration=$(DEBUG_CONFIGURATION)
 	#This is Windows only, so can be removed
 	rm bin_release/AtsPluginProxy.*
 	# As we reference this, it gets copied to this directory too
@@ -21,7 +21,7 @@ override_dh_auto_build:
 	mv bin_release openbve
 	
 override_dh_auto_clean:
-	xbuild /t:Clean OpenBVE.sln
+	xbuild /t:Clean ProjectRails.sln
 
 override_dh_auto_install:
 	#do most of this stuff in debian/install, maybe with dh-exec

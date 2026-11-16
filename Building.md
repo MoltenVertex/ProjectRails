@@ -87,15 +87,15 @@ NOTE: Depending on the install type you select, Mono will not install all compon
 
 #### When to use .NET Framework
 
-1. Open the main OpenBVE.sln file with Visual Studio.
+1. Open the main ProjectRails.sln file with Visual Studio.
 2. Build the required project, allowing NuGet to restore the packages as required.
 
 #### When to use Mono
 
 1. Start "Open Mono Command Prompt" from the start menu.
 2. Open the main ProjectRails source directory in this terminal.
-3. Restore the packages as required. `nuget restore OpenBVE.sln`
-4. Build the solution. `msbuild OpenBVE.sln`
+3. Restore the packages as required. `nuget restore ProjectRails.sln`
+4. Build the solution. `msbuild ProjectRails.sln`
 
 ### Mac / Linux
 

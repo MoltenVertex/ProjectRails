@@ -58,7 +58,7 @@ reset:=$(shell tput sgr0)
 .PHONY: prequisite-check
 
 restore:
-	$(NUGET) restore OpenBVE.sln
+	$(NUGET) restore ProjectRails.sln
 
 debug: openbve-debug
 release: openbve-release
@@ -66,32 +66,32 @@ openbve: openbve-debug
 
 openbve-debug: restore
 	$(info Building ProjectRails in debug mode....)
-	$(MSBUILD) /t:OpenBve /p:Configuration=Debug OpenBVE.sln
+	$(MSBUILD) /t:OpenBve /p:Configuration=Debug ProjectRails.sln
 	@cp source/LibRender2/OpenTK.dll.config bin_debug/OpenTK.dll.config
 
 openbve-release: restore
 	$(info Building ProjectRails in release mode....)
-	$(MSBUILD) /t:OpenBve /p:Configuration=Release OpenBVE.sln
+	$(MSBUILD) /t:OpenBve /p:Configuration=Release ProjectRails.sln
 	@cp source/LibRender2/OpenTK.dll.config bin_release/OpenTK.dll.config
 
 all: all-debug
 
 all-debug: restore
 	$(info Building ProjectRails and developer tools in debug mode....)
-	$(MSBUILD) /t:build /p:Configuration=Debug OpenBVE.sln
+	$(MSBUILD) /t:build /p:Configuration=Debug ProjectRails.sln
 	@cp source/LibRender2/OpenTK.dll.config bin_debug/OpenTK.dll.config
 
 all-release: restore
 	$(info Building ProjectRails and developer tools in release mode....)
-	$(MSBUILD) /t:build /p:Configuration=Release OpenBVE.sln
+	$(MSBUILD) /t:build /p:Configuration=Release ProjectRails.sln
 	@cp source/LibRender2/OpenTK.dll.config bin_release/OpenTK.dll.config
 
 clean-all: clean
 
 clean:
 	$(info Runing solution clean....)
-	$(MSBUILD) /t:clean /p:Configuration=Debug OpenBVE.sln
-	$(MSBUILD) /t:clean /p:Configuration=Release OpenBVE.sln
+	$(MSBUILD) /t:clean /p:Configuration=Debug ProjectRails.sln
+	$(MSBUILD) /t:clean /p:Configuration=Release ProjectRails.sln
 
 	# Release Files
 	rm -f $(LINUX_BUILD_RESULT)

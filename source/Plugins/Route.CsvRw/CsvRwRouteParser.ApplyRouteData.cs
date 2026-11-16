@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using OpenBveApi.Colors;
 using OpenBveApi.Math;
 using OpenBveApi.Runtime;
@@ -445,11 +446,30 @@ namespace CsvRwRouteParser
 					int s = Data.Blocks[i].Station;
 					if (CurrentRoute.Tracks[0].Direction == TrackDirection.Reverse)
 					{
-						CurrentRoute.Tracks[0].Elements[n].Events.Add(new StationEndEvent(Plugin.CurrentHost, Plugin.CurrentRoute, 0.0, s));
+						for (int t = 0; t < CurrentRoute.Tracks.Count; t++)
+						{
+							int railKey = CurrentRoute.Tracks.ElementAt(t).Key;
+							if (railKey == -1 || (PreviewOnly && railKey != 0))
+							{
+								// ground rail
+								continue;
+							}
+							CurrentRoute.Tracks[railKey].Elements[n].Events.Add(new StationEndEvent(Plugin.CurrentHost, Plugin.CurrentRoute, 0.0, s));
+						}
+						
 					}
 					else
 					{
-							CurrentRoute.Tracks[0].Elements[n].Events.Add(new StationStartEvent(CurrentRoute, 0.0, s));
+						for (int t = 0; t < CurrentRoute.Tracks.Count; t++)
+						{
+							int railKey = CurrentRoute.Tracks.ElementAt(t).Key;
+							if (railKey == -1 || (PreviewOnly && railKey != 0))
+							{
+								// ground rail
+								continue;
+							}
+							CurrentRoute.Tracks[railKey].Elements[n].Events.Add(new StationStartEvent(CurrentRoute, 0.0, s));
+						}
 					}
 
 					double dx = 0.0;
@@ -1031,7 +1051,10 @@ namespace CsvRwRouteParser
 							double d = ElementDelta(n, Data.Blocks[i].Transponders[j].TrackPosition);
 							int s = Data.Blocks[i].Transponders[j].SectionIndex;
 							// Keep valid section references; clamp bad values to -1 (unset)
-							if (s < 0) s = -1;
+							if (s < 0 || s >= Plugin.CurrentRoute.Sections.Length)
+							{
+								s = -1;
+							}
 							CurrentRoute.Tracks[0].Elements[n].Events.Add(new TransponderEvent(CurrentRoute, d, Data.Blocks[i].Transponders[j].Type, Data.Blocks[i].Transponders[j].Data, s, Data.Blocks[i].Transponders[j].ClipToFirstRedSection));
 							Data.Blocks[i].Transponders[j].Type = -1;
 						}
